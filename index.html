@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Locator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Locator</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="ip-address-1">Enter IP Address 1:</label>
+          <input type="text" id="ip-address-1" />
+        </div>
+        <div>
+          <label for="ip-address-2">Enter IP Address 2:</label>
+          <input type="text" id="ip-address-2" />
+        </div>
+        <button type="button" id="locate-button">Locate</button>
+      </form>
+      <div class="location-result">
+        <h2>Location 1:</h2>
+        <p id="location-result-1"></p>
+        <h2>Location 2:</h2>
+        <p id="location-result-2"></p>
+      </div>
+      <div id="map"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
